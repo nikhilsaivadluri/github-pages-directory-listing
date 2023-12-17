@@ -1,5 +1,14 @@
 name: main
-on: [push]
+on: 
+  push:
+    branches: 
+      - master
+  workflow_dispatch:
+    inputs:
+       branch_name:
+          description: 'Branch to run allure report'
+          required: true
+          default: master      
 
 jobs:
   pages-directory-listing:
