@@ -23,13 +23,13 @@ jobs:
       - name: Generate Directory Listings
         uses: jayanta525/github-pages-directory-listing@main
         with:
-          FOLDER: data
+          FOLDER: src
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload generator folder
-          path: 'data'
+          path: 'src'
 
   deploy:
     needs: pages-directory-listing
