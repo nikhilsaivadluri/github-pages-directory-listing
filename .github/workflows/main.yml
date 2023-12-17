@@ -19,8 +19,6 @@ jobs:
       # you must check out the repository
       - name: Checkout
         uses: actions/checkout@v3
-        with:
-          ref: dummy-data
 
       - name: Generate Directory Listings
         uses: jayanta525/github-pages-directory-listing@main
